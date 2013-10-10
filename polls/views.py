@@ -1,9 +1,10 @@
 # Create your views here.
-from polls.models import Poll, Choice
+from django.core.urlresolvers import reverse
+from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
-from django.http import HttpResponseRedirect, HttpResponse
-from django.core.urlresolvers import reverse
+
+from polls.models import Poll, Choice
 
 def index(request):
     latest_poll_list = Poll.objects.all().order_by('-pub_date')[:5]
