@@ -1,4 +1,4 @@
-from django.shortcuts import render_to_response
+from django.shortcuts import render
 
 def start(request):
-	return render_to_response('start.html')
+	return render(request, 'start.html')

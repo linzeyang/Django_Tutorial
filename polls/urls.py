@@ -9,12 +9,8 @@ urlpatterns = patterns('polls.views',
     # url(r'^$', 'mysite.views.home', name='home'),
     # url(r'^mysite/', include('mysite.foo.urls')),
 
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
-    url(r'^$', 'index'),
-    url(r'^(?P<poll_id>\d+)/$', 'detail'),
-    url(r'^(?P<poll_id>\d+)/results/$', 'results'),
-    url(r'^(?P<poll_id>\d+)/vote/$', 'vote'),
+    url(r'^$', 'index', name='index'),
+    url(r'^(?P<poll_id>\d+)/$', 'detail', name='detail'),
+    url(r'^(?P<poll_id>\d+)/results/$', 'results', name='results'),
+    url(r'^(?P<poll_id>\d+)/vote/$', 'vote', name='vote'),
 )
