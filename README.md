@@ -1,4 +1,4 @@
 DjangoTutorial
 ===========
-Following official Django tutorial: https://docs.djangoproject.com/en/1.5/intro/tutorial01/
+Following official Django tutorial: https://docs.djangoproject.com/en/3.2/intro/tutorial01/
 - - -
